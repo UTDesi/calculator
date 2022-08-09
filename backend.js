@@ -69,3 +69,12 @@ delBtn.addEventListener('click', () => {
         display.innerHTML = field2;
     }
 });
+
+eqlBtn.addEventListener('click', () => {
+    if(op == "x"){
+        op = "*";
+    }
+    let result = eval(field1 + op + field2);
+    field1 = result;
+    display.innerHTML = field1;
+})
