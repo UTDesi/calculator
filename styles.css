@@ -9,24 +9,55 @@ body {
     border: 2px black solid;
     padding: 10px;
     border-radius: 25px;
-}
-
-#calc-dipslay {
-    width: 100%;
-    min-height: 50px;
-    border: 2px black solid;
+    background-color: black;
+    padding-bottom: 15px;
+    padding-top: 15px;
 }
 
 button {
     border-radius: 25px;
     width: 50px;
     height: 50px;
+    border-style: none;
+    margin-right: 5px;
+    font-weight: bolder;
+    font-size: larger;
 }
 
+#display-btn {
+    width: 228px;
+    text-align: right;
+    padding-right: 20px;
+    margin-bottom: 10px;
+}
+
+#divide, #multiply, #subtract, #add, #equal, #display-btn {
+    margin-right: 0px;
+}
+
+.opr-btn, .eql-btn{
+    background-color: rgb(248, 142, 4);
+    color: white;
+}
+
+#clear, #delete, #negate {
+    background-color: darkgray;
+}
+
+#clear, #delete {
+    font-size: medium;
+}
+
+.num-btn, #dot{
+    color: white;
+    background-color:dimgray
+}
+
+
 #zero-btn {
-    width: 104px;
+    width: 109px;
 }
 
 .rows {
-    padding-top: 5px;
+    margin-top: 10px;
 }
