@@ -40,3 +40,9 @@ dotBtn.addEventListener('click', () => {
     }
 });
 
+clrBtn.addEventListener('click', () => {
+    field1 = "0";
+    field2 = "0";
+    op = "0";
+    display.innerHTML = field1;
+});
