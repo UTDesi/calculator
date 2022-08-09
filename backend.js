@@ -1,4 +1,4 @@
-let op = 0;
+let op = "0";
 
 let field1 = "";
 let field2 = "";
@@ -14,11 +14,11 @@ const display = document.querySelector('#display');
 
 numButtons.forEach((button) => {
     button.addEventListener('click', () => {
-        if(op == 0){
-            field1.concat(button.innerHTML);
+        if(op == "0"){
+            field1 = field1.concat(button.innerHTML);
             display.innerHTML = field1;
         } else {
-            field2.concat(button.innerHTML);
+            field2 = field2.concat(button.innerHTML);
             display.innerHTML = field2;
         }
     });
@@ -29,3 +29,14 @@ oprButtons.forEach((button) => {
         op = button.innerHTML;
     });
 });
+
+dotBtn.addEventListener('click', () => {
+    if(op == "0" && !field1.includes(".")){
+        field1 = field1.concat(dotBtn.innerHTML);
+        display.innerHTML = field1;
+    } else if(op != "0" && !field2.includes(".")) {
+        field2 = field2.concat(dotBtn.innerHTML);
+        display.innerHTML = field2;
+    }
+});
+
