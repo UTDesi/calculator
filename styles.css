@@ -1,20 +1,32 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
 #calculator-body {
     display: flex;
     flex-direction: column;
+    border: 2px black solid;
+    padding: 10px;
+    border-radius: 25px;
 }
 
-#dipslay {
-    border-radius: 10px;
-    width: 212px;
-    height: 50px;
+#calc-dipslay {
+    width: 100%;
+    min-height: 50px;
+    border: 2px black solid;
 }
 
 button {
-    border-radius: 10px;
+    border-radius: 25px;
     width: 50px;
     height: 50px;
 }
 
 #zero-btn {
     width: 104px;
+}
+
+.rows {
+    padding-top: 5px;
 }
