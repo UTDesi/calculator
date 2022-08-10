@@ -96,8 +96,9 @@ button {
 }
 
 #mode-btn-pic {
-    margin-left: 0px;
+    margin-left: -1px;
     padding: 0px;
+    margin-top: 3px;
 }
 
 .num-btn:hover, #dot:hover {
@@ -134,8 +135,4 @@ button {
 
 .rows {
     margin-top: 10px;
-}
-
-.image_toggle {
-    src: url(/pics/light_mode.png); 
 }
